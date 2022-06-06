@@ -2585,20 +2585,20 @@ input, select, textarea {
 	}
 
 		.tiles article {
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
+			-moz-transition: -moz-transform 0s, opacity 0s ;
+			-webkit-transition: -webkit-transform 0s, opacity 0s ;
+			-ms-transition: -ms-transform 0s, opacity 0s;
+			transition: transform 0s, opacity 0s;
 			position: relative;
 			width: calc(33.33333%);
 			margin: none;
 		}
 
 			.tiles article > .image {
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
+				-moz-transition: -moz-transform 0.1s ease;
+				-webkit-transition: -webkit-transform 0.1s ease;
+				-ms-transition: -ms-transform 0.1s ease;
+				transition: transform 0.1s ease;
 				position: relative;
 				display: block;
 				width: 100%;
@@ -2613,10 +2613,10 @@ input, select, textarea {
 
 				.tiles article > .image:before {
 					pointer-events: none;
-					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
-					transition: background-color 0.5s ease, opacity 0.5s ease;
+					-moz-transition: background-color 0s ease, opacity 0s ease;
+					-webkit-transition: background-color 0s ease, opacity 0s ease;
+					-ms-transition: background-color 0s ease, opacity 0s ease;
+					transition: background-color 0s ease, opacity 0s ease;
 					content: '';
 					display: block;
 					position: absolute;
@@ -2631,10 +2631,10 @@ input, select, textarea {
 
 				.tiles article > .image:after {
 					pointer-events: none;
-					-moz-transition: opacity 0.5s ease;
-					-webkit-transition: opacity 0.5s ease;
-					-ms-transition: opacity 0.5s ease;
-					transition: opacity 0.5s ease;
+					-moz-transition: opacity 0s;
+					-webkit-transition: opacity 0s;
+					-ms-transition: opacity 0s;
+					transition: opacity 0s;
 					content: '';
 					display: block;
 					position: absolute;
@@ -2667,10 +2667,10 @@ input, select, textarea {
 				-webkit-justify-content: center;
 				-ms-justify-content: center;
 				justify-content: center;
-				-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
-				transition: background-color 0.5s ease, transform 0.5s ease;
+				-moz-transition: background-color 0s, -moz-transform 0s;
+				-webkit-transition: background-color 0s, -webkit-transform 0s;
+				-ms-transition: background-color 0s, -ms-transform 0s;
+				transition: background-color 0s, transform 0s;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -2698,10 +2698,10 @@ input, select, textarea {
 				}
 
 				.tiles article > a .content {
-					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-					transition: max-height 0.5s ease, opacity 0.5s ease;
+					-moz-transition: max-height 0s, opacity 0s;
+					-webkit-transition: max-height 0s, opacity 0s;
+					-ms-transition: max-height 0s, opacity 0s;
+					transition: max-height 0s, opacity 0s;
 					width: 100%;
 					max-height: 0;
 					line-height: 1.5;
@@ -2743,10 +2743,31 @@ input, select, textarea {
 				-ms-transform: scale(0.95);
 				transform: scale(0.95);
 			}
-*/
-				body:not(.is-touch) .tiles article:hover > .image:before {
-					background-color: #020109;
-					opacity: 0.8; /*THIS IS THE OPACITY NUMBER FOR THE IMAGE ON HOVER*/
+				
+*/				
+				body:not(.is-touch) .tiles article.style1:hover > .image:before {
+					background-color: #3b2998; /* USED TO BE 020109*/
+					opacity: 1; /*THIS IS THE OPACITY NUMBER FOR THE IMAGE ON HOVER*/
+				}
+				body:not(.is-touch) .tiles article.style2:hover > .image:before {
+					background-color: #283b30; /* USED TO BE 020109, then dark green 283b30*/
+					opacity: 1; /*THIS IS THE OPACITY NUMBER FOR THE IMAGE ON HOVER*/
+				}
+				body:not(.is-touch) .tiles article.style3:hover > .image:before {
+					background-color: #86b3d3; /* USED TO BE 020109*/
+					opacity: 1; 
+				}
+				body:not(.is-touch) .tiles article.style4:hover > .image:before {
+					background-color: #c0428e; /* USED TO BE 020109*/
+					opacity: 1; 
+				}
+				body:not(.is-touch) .tiles article.style5:hover > .image:before {
+					background-color: #f5926e; /* USED TO BE 020109*/
+					opacity: 1;
+				}
+				body:not(.is-touch) .tiles article.style6:hover > .image:before {
+					background-color: #7f2a31; /* USED TO BE 020109*/
+					opacity: 1; 
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
@@ -2763,14 +2784,14 @@ input, select, textarea {
 			margin-top: 2em;
 
 		}
-
+/*
 		body.is-preload .tiles article {
 			-moz-transform: scale(0.9);
 			-webkit-transform: scale(0.9);
 			-ms-transform: scale(0.9);
 			transform: scale(0.9);
 			opacity: 0;
-		}
+		}*/
 
 		body.is-touch .tiles article .content {
 			max-height: 15em;
@@ -2782,12 +2803,16 @@ input, select, textarea {
 			.tiles {
 				margin: 0;
 			}
-
+/*
 				.tiles article {
 					width: calc(33.33333% - 1.25em);
 					margin: 1.25em 0 0 1.25em;
 				}
-
+*/
+			.tiles article {
+				width: calc(33.33333% - 1.5em);
+				margin: 1.25em 0.75em 0 0.75em; /* I changed this to make margins centered!*/
+			}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2798,7 +2823,7 @@ input, select, textarea {
 
 				.tiles article {
 					width: calc(50% - 2.5em);
-					margin: 2.5em 0 0 2.5em;
+					margin: 2.5em 1.25em 0 1.25em;
 				}
 
 		}
@@ -2811,15 +2836,15 @@ input, select, textarea {
 
 				.tiles article {
 					width: calc(50% - 1.25em);
-					margin: 1.25em 0 0 1.25em;
+					margin: 1.25em 0.625em 0 0.625em;
 				}
-
+/*
 					.tiles article:hover > .image {
 						-moz-transform: scale(1.0);
 						-webkit-transform: scale(1.0);
 						-ms-transform: scale(1.0);
 						transform: scale(1.0);
-					}
+					} */
 
 		}
 
@@ -2888,14 +2913,19 @@ input, select, textarea {
 			#header {
 				padding: 0;
 			}
+			#message {
+				padding-left: 0.75em;
+			}
+
 
 
 		}
 
 #message {
+	position: relative;
 	color: white;
 	font-size: inherit;
-	margin-right: 20%;
+
 }
 
 /* Main */
@@ -2976,6 +3006,10 @@ input, select, textarea {
 					}
 
 		@media screen and (max-width: 1280px) {
+
+			#message, .logo {
+				padding-left: 2%;
+			}
 
 			#footer {
 				padding: 5em 0 3em 0 ;
@@ -3174,6 +3208,8 @@ footer > * > .inner {
 
 .hat {
 	display: block;
+	min-height: 20vh;
+	min-width: 15%;
 	max-width: 20%;
 	font-size:smaller;
 }
@@ -3298,7 +3334,7 @@ footer > * > .inner {
 	margin-bottom: 3em;
 }
 
-.miami {
+.half {
 	max-width: 50%;
 }
 
@@ -3330,6 +3366,35 @@ dd {
 
 .sectiontitle {
     color:#86b3d3;
+}
+
+.vol {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: content-box;
+	margin: auto;
+	margin-bottom: 3em;
+}
+
+.Ndescription {
+	padding-right: 10%;
+}
+
+.half2 {
+	margin-bottom: 5em;
+	width: 45vw;
+	height: 90vh;
+}
+
+#eight {
+	padding-left: 2;
+	display: block;
+}
+
+#seven {
+	padding-right: 2%;
+	display: block;
 }
 
 /* PUBLISHED WORKS SECTION */
