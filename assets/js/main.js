@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 (function($) {
 
 	var	$window = $(window),
@@ -183,6 +184,14 @@
 			});
 
 })(jQuery);
+
+
+
+
+// CUSTOM CURSOR
+
+
+//OG cursor - used to be above custom one
 
 const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove",(e) => {

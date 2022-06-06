@@ -316,6 +316,10 @@ input, select, textarea {
 		text-align: right;
 	}
 
+/* Custom Cursor haha jk nvm */
+
+
+
 /* Row */
 
 	.row {
@@ -3155,18 +3159,37 @@ footer > * > .inner {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	max-width:  50%;
+	max-width:  50%;  
 }
 
 .hats {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content:space-between;
+	width: 100%;
+	padding-left: 6em;
+	padding-right: 6em;
+}
+
+.hat {
+	display: block;
+	max-width: 20%;
+	font-size:smaller;
+}
+
+.haticon {
+	max-width: 10%;
+	display: inline-flex;
+	background-color:
+}
+
+#neuron, #paintbrush, #gear, #puzzle {
+	width: 150px;
 }
 
 
-
+/*
 .vc_column_container {
     padding-left: 0;
     padding-right: 0;
@@ -3231,6 +3254,8 @@ footer > * > .inner {
     color: #fff;
 }
 
+*/
+
 
 /* SNAIL SECTION */
 
@@ -3271,6 +3296,10 @@ footer > * > .inner {
 
 .snailsection {
 	margin-bottom: 3em;
+}
+
+.miami {
+	max-width: 50%;
 }
 
 

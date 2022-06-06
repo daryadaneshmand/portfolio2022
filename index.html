@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/lightbulb.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script><link rel="js" href="assets/js/main.js"/></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
 
 
@@ -126,7 +127,22 @@
 							
 							</section>
 						</div>
-						<!--<div class="cursor"></div>-->
+
+						<!--CUSTOM CURSOR-->
+						<div class="cursor">
+							<div class="cursor__ball cursor__ball--big ">
+							  <svg height="30" width="30">
+								<circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+							  </svg>
+							</div>
+							
+							<div class="cursor__ball cursor__ball--small">
+							  <svg height="10" width="10">
+								<circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+							  </svg>
+							</div>
+						  </div>
+						  
 					</div>
 				
 				<!--About Me-->
@@ -143,62 +159,71 @@
 							</p>
 						</section>	
 					</div>
-				
-				<!--Darya's Four Hats-->
-				
-					<div class="hat" class="vc_row" class="wpb_row" class="section" class="vc_row-fluid" style=" text-align:left;"><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<h3 style="text-align: center;">I'm an aspiring...</h3>		
-		</div> 
-		<div class="inner" class="hats">
 
-					<!--Engineer-->
-	</div> <div class="hat" class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div></div></div>
-					<div class="inner" class="vc_row wpb_row section vc_row-fluid " style=" text-align:left;"><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="q_icon_with_title large circle center"><div class="icon_holder " style=" "><div class="icon_holder_inner"><span class="fa-stack fa-4x  custom-font" style="border-width: 20px;"><i class="icon_text_icon fa fa-gears fa-stack-1x"></i></span></div></div><div class="icon_text_holder" style=""><div class="icon_text_inner" style=""><h4 class="icon_title" style="">Engineer</h4><p style="">by training</p></div></div></div><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p class="p1"><span class="s1">I began working at the Segal Prototyping and Fabrication Lab at Ford Motor Company Engineering Design Center serendipitously. Upon entering the shop to complete a training, I was the last to finish the miniature house each trainee built because I was longingly staring at the machines we <em>weren't</em> using. When they mentioned that they were in need of trainers, I figured it couldn't hurt to apply. I love working with my hands and experimenting with novel media. I enjoy laser cutting and engraving wood pieces for my apartment, making rings on the lathe, and honing my skills on the mill. Going forward, I hope to gain proficiency on the CNC milling machine and welding, for which I have received introductory training. I'd like to practice more with CAD software, as I have beginner level experience with Solidworks.
-</span></p>
 
-					<!--Scientist-->
+				<!--Four Hats-->
 
-</div> 
-</div> <div class="hat" class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="q_icon_with_title large circle center"><div class="icon_holder " style=" "><div class="icon_holder_inner"><span class="fa-stack fa-4x  custom-font" style="border-width: 20px;"><i class="icon_text_icon fa fa-flask fa-stack-1x"></i></span></div></div><div class="icon_text_holder" style=""><div class="icon_text_inner" style=""><h4 class="icon_title" style="">Scientist</h4><p style="">by training</p></div></div></div><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Research on psychiatric disorders such as depression, mood disorders, and substance use disorders are of great interest to me, particularly as 
-	they pertain to behavioral states such as sleep and attention. My interest in sensory processing stems from my interest in auditory processing 
-	of music, on which I have taken a course and read several books. I enjoy learning about the biological foundations of memory consolidation, and 
-	my interest in contexts for abstract learning stems from my love of chess and the role it has played in improving my own memory over the course 
-	of the past two years. 
+						<h2 style="text-align: center" >I'm an aspiring...</h2>
 
-	While previously shadowing and subsequently assisting with neurofeedback sessions, I had a chance to review EEG results of patients with various 
-	psychiatric conditions and traumatic brain injuries. Seeing changes in the expression of different brain waves in specific brain regions over 
-	courses of treatment (by examining archives) furthered an existing interest in both non-invasive neuromodulation and transcranial brain stimulation.  
-	</p>
-</div> 
+					
+					<div class="hats" class="inner">
+						
+								
+						<div class="hat" id="scientist">
+							<div class="haticon">
+								<img id="neuron" src="images/h1.png">
+							</div>	
+							<h2 style="color:#f5926e">Scientist</h2>
+							<p class="description">Research on psychiatric disorders such as depression, mood disorders, and substance use disorders are of great interest to me, particularly as 
+								they pertain to behavioral states such as sleep and attention. My interest in sensory processing stems from my interest in auditory processing 
+								of music, on which I have taken a course and read several books. I enjoy learning about the biological foundations of memory consolidation, and 
+								my interest in contexts for abstract learning stems from my love of chess and the role it has played in improving my own memory over the course 
+								of the past two years. 
+							
+								While previously shadowing and subsequently assisting with neurofeedback sessions, I had a chance to review EEG results of patients with various 
+								psychiatric conditions and traumatic brain injuries. Seeing changes in the expression of different brain waves in specific brain regions over 
+								courses of treatment (by examining archives) furthered an existing interest in both non-invasive neuromodulation and transcranial brain stimulation.  
+							</p>
+						</div>
+						
 
-					<!--Artist-->
-</div> <div class="hat" class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="q_icon_with_title large circle center"><div class="icon_holder " style=" "><div class="icon_holder_inner"><span class="fa-stack fa-4x  custom-font" style="border-width: 20px;"><i class="icon_text_icon fa fa-paint-brush fa-stack-1x"></i></span></div></div><div class="icon_text_holder" style=""><div class="icon_text_inner" style=""><h4 class="icon_title" style="">Artist</h4><p style="">by nature</p></div></div></div><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>I dabble in art across several forms of media. I enjoy sketching with mechanical pencil and create digital art primarily with  Photoshop, Illustrator, and Procreate. My focus within my Journalism major has primarily been on interactive media.  I'm a big fan of creative coding for music visualizers and am also drawn to creative data visualization. Frederica Fragapane is an inspiration of mine (I learned a lot from her Skillshare course). Above all, I am drawn to interactive installation art.</p>
+						<div class="hat" id="engineer">
+							<div class="haticon">
+								<img id="gear" src="images/h2.png">
+							</div>	
+							<h2 style="color:#f5926e">Engineer</h2>
+							<p class="description">I began working at the Segal Prototyping and Fabrication Lab at Ford Motor Company Engineering Design Center serendipitously. Upon entering the 
+								shop to complete a training, I was the last to finish the miniature house each trainee built because I was longingly staring at the machines we <em>weren't</em> using.
+								When they mentioned that they were in need of trainers, I figured it couldn't hurt to apply. I love working with my hands and experimenting with novel media. I enjoy 
+								laser cutting and engraving wood pieces for my apartment, making rings on the lathe, and honing my skills on the mill. Going forward, I hope to gain proficiency on 
+								the CNC milling machine and welding, for which I have received introductory training. I'd like to practice more with CAD software, as I have beginner level experience
+								with Solidworks.
+							</p>
+						</div>
 
-</div> 
+						<div class="hat" id="designer">
+							<div class="haticon">
+								<img id="puzzle" src="images/h3.png">
+							</div>	
+							<h2 style="color:#f5926e">Designer</h2>
+							<p class="description">I hope to design solutions that improve spaces and experiences by drawing from my different knowledge bases and collaborating with like-minded people. Mother earth is the ultimate designer; thus, biomimicry is my favorite form of design. I enjoy studying my environment, and hope to 
+								someday apply my design skills to areas for sustainabile innovation such as biosynthesis and architecture.   
+							</p>
+						</div>
 
-					<!--Designer-->
-</div> <div class="hat" class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="q_icon_with_title large circle center"><div class="icon_holder " style=" "><div class="icon_holder_inner"><span class="fa-stack fa-4x  custom-font" style="border-width: 20px;"><i class="icon_text_icon fa fa-scissors fa-stack-1x"></i></span></div></div><div class="icon_text_holder" style=""><div class="icon_text_inner" style=""><h4 class="icon_title" style="">Designer</h4><p style="">by necessity</p></div></div></div><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p class="p1"><span class="s1">I hope to design solutions that improve spaces and experiences by drawing from my different knowledge bases and collaborating with like-minded people. Mother earth is the ultimate designer; thus, biomimicry is my favorite form of design. I enjoy studying my environment, and hope to 
-	someday apply my design skills to areas for sustainabile innovation such as biosynthesis and architecture. 
-</span></p>
+						<div class="hat" id="artist">
+							<div class="haticon">
+								<img id="paintbrush" src="images/h4.png">
+							</div>	
+							<h2 style="color:#f5926e">Artist</h2>
+							<p class="description">I dabble in art across several forms of media. I enjoy sketching with mechanical pencil and create digital art primarily with  Photoshop, Illustrator, and Procreate. My focus within my Journalism major has primarily been on interactive media.  I'm a big fan of creative coding for music visualizers and am also drawn to creative data visualization. Frederica Fragapane is an inspiration of mine (I learned a lot from her Skillshare course). Above all, I am drawn to interactive installation art.  
+							</p>
+						</div>
 
-</div> 
-</div> <div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div></div></div>
+						
+					</div>
+		
 
-				</div>
 
 					
 
