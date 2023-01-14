@@ -186,8 +186,6 @@
 })(jQuery);
 
 
-
-
 // CUSTOM CURSOR
 
 
@@ -202,3 +200,68 @@ document.addEventListener("mousemove",(e) => {
 	cursor.style.left = leftPosition;
 	cursor.style.top = topPosition;
 })
+
+
+
+// NEW SLIDESHOW TYPE - W DOTS & ARROWS
+
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if(n > slides.length) {
+        slideIndex = 1 //1
+    }
+    if(n < 1) {
+        slideIndex = slides.length
+    }
+    for(i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for(i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    }
+
+	// STACK OVERFLOW CODE
+/*
+	var slideIndex = [1, 1]; // This will be automatically populated
+	var slideId = ["mySlides"];
+	initialiseSlides();
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2); // Note that this is set to 1 now
+	showSlides(1, 3);
+	
+	// Initalise all starting slide indexes
+	function initialiseSlides(){
+	   for (var i = 0; i < slideId.length; i++){
+		  slideIndex[i] = 1;
+	   }
+	}
+	
+	function plusSlides(n, no) {
+	  showSlides(slideIndex[no] += n, no);
+	}
+	
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (n > x.length) {slideIndex[no] = 1}    
+	  if (n < 1) {slideIndex[no] = x.length}
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+	  }
+	  x[slideIndex[no]-1].style.display = "block"; 
+	}
+	*/
