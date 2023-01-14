@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h3, h4, h5, h6, p, blockquote,
@@ -26,7 +22,14 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 h1, h2 {
-	color: white;
+	color: black; /* previously white */
+
+
+
+}
+
+h4 {
+	color:#5a6770;
 }
 
 article, aside, details, figcaption, figure,
@@ -35,6 +38,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+}
+figcaption {
+	font-size: smaller;
+	padding-top:1em;
 }
 
 ol, ul {
@@ -63,6 +70,35 @@ mark {
 	background-color: transparent;
 	color: inherit;
 }
+
+/*
+.highlight {
+	background-color:rgba(245,146,110,0.6);
+}
+*/
+.highlight-container, .highlight {
+	position: relative;
+  }
+  
+  .highlight-container {
+	display: inline-block;
+  }
+  .highlight-container:before {
+	content: " ";
+	display: block;
+	height: 90%;
+	width: 100%;
+	margin-left: -3px;
+	margin-right: -3px;
+	position: absolute;
+	background:rgba(243,132,156,.3) ; /*#ffd500 orange #f6a689*/
+	transform: rotate(2deg);
+	top: -1px;
+	left: -1px;
+	border-radius: 20% 25% 20% 24%;
+	padding: 10px 3px 3px 10px;
+  }
+  
 
 input::-moz-focus-inner {
 	border: 0;
@@ -103,7 +139,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #020109;
+		background: #ebebef;  /* BODY COLOR - previously #020109 aka near black, then #ebebef (gr*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,7 +156,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #cccccc;
+		color: black;  /* COLOR OF MAIN TEXT */
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -204,7 +240,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.15em; /*.35*/
 	}
 
 		a, h3 a, h4 a, h5 a, h6 a {
@@ -212,23 +248,24 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.1em;
+		font-size: 2em; /*1.1*/
+		
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.25em; /*1em*/
 	}
 
 	h4 {
-		font-size: 0.8em;
+		font-size: 0.8em; /*.8em*/
 	}
 
 	h5 {
-		font-size: 0.8em;
+		font-size: 0.8em; /*.8em*/
 	}
 
 	h6 {
-		font-size: 0.8em;
+		font-size: 0.8em; /*.8em*/
 	}
 
 	@media screen and (max-width: 980px) {
@@ -1808,6 +1845,7 @@ input, select, textarea {
 
 /* Icon */
 
+
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -2046,6 +2084,7 @@ input, select, textarea {
 		}
 
 /* Icons */
+
 
 	ul.icons {
 		cursor: default;
@@ -2766,7 +2805,7 @@ input, select, textarea {
 					opacity: 1;
 				}
 				body:not(.is-touch) .tiles article.style6:hover > .image:before {
-					background-color: #7f2a31; /* USED TO BE 020109*/
+					background-color: #481282; /* USED TO BE 020109*/
 					opacity: 1; 
 				}
 
@@ -2924,7 +2963,7 @@ input, select, textarea {
 #message {
 	position: relative;
 	color: white;
-	font-size: inherit;
+	font-size: 1.5em;
 
 }
 
@@ -3196,6 +3235,7 @@ footer > * > .inner {
 	max-width:  50%;  
 }
 
+
 .hats {
 	display: flex;
 	flex-direction: row;
@@ -3206,18 +3246,14 @@ footer > * > .inner {
 	padding-right: 6em;
 }
 
+
 .hat {
-	display: block;
-	min-height: 20vh;
-	min-width: 15%;
-	max-width: 20%;
 	font-size:smaller;
 }
 
 .haticon {
 	max-width: 10%;
 	display: inline-flex;
-	background-color:
 }
 
 #neuron, #paintbrush, #gear, #puzzle {
@@ -3292,6 +3328,10 @@ footer > * > .inner {
 
 */
 
+.tiletitle {
+	font-size: 1.1em;
+}
+
 
 /* SNAIL SECTION */
 
@@ -3319,6 +3359,7 @@ footer > * > .inner {
 
 .sectiontitle {
     color:#86b3d3;
+
 }
 
 .main {
@@ -3328,10 +3369,11 @@ footer > * > .inner {
 .snailimg {
 	max-height: 50vh;
 	height: auto;
+	margin: 10px;
 }
 
 .snailsection {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 
 .half {
@@ -3424,6 +3466,7 @@ dd {
 	margin-bottom: 1.5em;
 }
 
+
 /* TREATMENT MAGAZINE DATA VIZ SECTION */
 
 #dataviz {
@@ -3478,6 +3521,14 @@ dd {
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 4em;
+	margin-bottom: 4em;
+
+}
+
+.small_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
 }
 
@@ -3504,12 +3555,141 @@ dd {
 	white-space: nowrap;
 	margin-bottom: 3em;
 }
-
+ /*
 .cactus {
 	max-width: 23vw;
 	max-height:60vh;
 	margin: auto;
 }
+
+.splide__slide img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+  }
+
+#image-carousel {
+
+}
+
+CAROUSEL SHIT
+*/
+
+/* 
+
+#slide_image {
+	width: 40%;
+	vertical-align: text-bottom;
+}
+
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+	position: relative;
+  }
+  
+
+  /* Hide the images by default 
+  .mySlides {
+	display: none;
+	margin: auto;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images 
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons 
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right 
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through 
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) 
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+
+  .numbertext2 {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text 
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side 
+  .column {
+	float: left;
+	width: 14.2%;
+  }
+
+/* four columns side by side 
+
+  .column2 {
+	float: left;
+	width: 25%;
+  }
+  
+  /* Add a transparency effect for thumnbail images 
+  .demo {
+	opacity: 0.6;
+  }
+
+  .thumbnail {
+	padding: 40px;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
 
 
 
@@ -3520,3 +3700,116 @@ dd {
 	padding-bottom: 2em;
 
 }
+
+
+
+
+/* SLIDESHOW (USED FOR MAYFEST) */
+
+* {
+	box-sizing: border-box;
+  }
+  .mySlides {
+	display: none;
+  }
+  .mySlides2 {
+	display: none;
+  }
+  img {
+	vertical-align: middle;
+  }
+  .slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* Caption text */
+  .text {
+	color: #ffffff;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #999999;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  .active,
+  .dot:hover {
+	background-color: #111111;
+  }
+  /* Fading animation */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+	from {
+	  opacity: .4
+	}
+	to {
+	  opacity: 1
+	}
+  }
+  @keyframes fade {
+	from {
+	  opacity: .4
+	}
+	to {
+	  opacity: 1
+	}
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+	.prev,
+	.next,
+	.text {
+	  font-size: 11px
+	}
+  }
