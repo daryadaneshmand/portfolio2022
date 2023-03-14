@@ -2963,7 +2963,10 @@ input, select, textarea {
 #message {
 	position: relative;
 	color: white;
-	font-size: 1.5em;
+	font-size: 1.2em;
+	padding-left: 14em;
+	padding-right: 14em;
+	text-align: center;
 
 }
 
