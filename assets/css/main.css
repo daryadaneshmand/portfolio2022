@@ -2971,6 +2971,31 @@ input, select, textarea {
 	margin-left: 23.5%;
 }
 
+.resume-btn {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: 2em;
+	border: 1px solid #86b3d3;
+	border-radius: 30px;
+	background-color: transparent;
+	color: black;
+	text-decoration: none;
+	font-size: smaller;
+  }
+  .resume-btn:hover {
+	font-style: ;
+	color:#f5926e;
+	border: 1px solid #f5926e;
+	box-shadow: 5px;
+  }
+
+  /* .center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  } */
+
 /* Main */
 
 	#main {
