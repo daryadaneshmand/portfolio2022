@@ -2971,6 +2971,15 @@ input, select, textarea {
 	margin-left: 23.5%;
 }
 
+#resume {
+	position: relative;
+	display: inline-block;
+	color: white;
+	font-size: 1.2em;
+	text-align: left;
+	margin-top:1em;
+}
+
 .resume-btn {
 	position: relative;
 	display: inline-block;
