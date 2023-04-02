@@ -139,7 +139,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ebebef;  /* BODY COLOR - previously #020109 aka near black, then #ebebef (gr*/
+		background: #ebebef;  /* COLOR OF BODY - previously #020109 aka near black, then #ebebef (gr*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -157,6 +157,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: black;  /* COLOR OF MAIN TEXT */
+		/* font-family: "Open Sans", Helvetica, sans-serif; */
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -3282,6 +3283,7 @@ footer > * > .inner {
 	width: 100%;
 	padding-left: 6em;
 	padding-right: 6em;
+	margin-bottom: 10em;
 }
 
 
@@ -3479,7 +3481,7 @@ dd {
 
 /* PUBLISHED WORKS SECTION */
 
-#chessimage, #chess, #chessdescription {
+ #chessimage, #chess, #chessdescription {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -3502,7 +3504,7 @@ dd {
 	max-width: 68em;
 	justify-content: space-between;
 	margin-bottom: 1.5em;
-}
+} 
 
 
 /* TREATMENT MAGAZINE DATA VIZ SECTION */
@@ -3861,3 +3863,93 @@ CAROUSEL SHIT
 	color:#f5926e;
 
 }
+
+
+/* PUZZLE PIECE INTERACTIVE 
+.puzzle-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #f2f2f2;
+	margin: 0;
+  }
+  
+  .puzzle-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	position: relative;
+  }
+  
+  .piece {
+	width: 50%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease, background-color 0.5s;
+  }
+  
+  
+  .piece span {
+	margin-bottom: 10px;
+	z-index: 2;
+  }
+  
+  .piece:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .piece.expanded {
+	width: 200%;
+	height: 500px;
+  }
+
+  
+  
+  .desc-content {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	max-height: 8em;
+	padding: 15px;
+	background-color: transparent;
+	z-index: -1;
+	transform: translateY(100%);
+	transition: all 0.5s ;
+	font-size: 0.8em;
+	text-align: left;
+	overflow: hidden; 
+  }
+  
+  .piece.expanded .desc-content {
+	transform: translateY(0%);
+	z-index: 1;
+	max-height: 800px; /* was 500px*/
+   /*}
+  
+ 
+  .scientist {
+	background-color: #f6938c;
+  }
+  
+  .maker {
+	background-color: #092b0a;
+  }
+  
+  .designer {
+	background-color: #76dadd;
+  }
+  
+  .storyteller {
+	background-color: #3F51B5;
+  }
+  */
