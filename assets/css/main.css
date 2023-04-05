@@ -2923,7 +2923,7 @@ input, select, textarea {
 		#header .logo {
 			display: block;
 			border-bottom: 0;
-			color: #86b3d3;
+			color: #86b3d3; /*#86b3d3*/
 			font-weight: 900;
 			letter-spacing: 0.35em;
 			margin: 0 0 2.5em 0;
@@ -3253,9 +3253,9 @@ footer > * > .inner {
 }
 
 #aboutme {
-	border-top:5px solid #86b3d3;
+	border-top:5px solid #2F2F2D;
 	padding-top: 2em;
-	border-bottom: 5px solid #86b3d3;
+	border-bottom: 5px solid #2F2F2D;
 }
 
 #profile {
@@ -3397,8 +3397,14 @@ footer > * > .inner {
 	vertical-align: baseline;
 }
 
+.title {
+	color:#2F2F2D;
+}
+
 .sectiontitle {
-    color:#86b3d3;
+    /* color:#86b3d3; */
+	color:#2F2F2D;
+	margin-bottom: 2em;
 
 }
 
@@ -3447,7 +3453,7 @@ dd {
 }
 
 .sectiontitle {
-    color:#86b3d3;
+    color:#2F2F2D;
 }
 
 .vol {
@@ -3736,7 +3742,7 @@ CAROUSEL SHIT
 /*cursor*/
 
 .bg {
-	border-bottom:5px solid #86b3d3;
+	border-bottom:5px solid #f5926e;
 	padding-bottom: 2em;
 
 }
@@ -3864,7 +3870,7 @@ CAROUSEL SHIT
 
 }
 
-.proj_title, h3 {
+h3 {
 	color:#2F2F2D;
 }
 
@@ -3964,3 +3970,11 @@ CAROUSEL SHIT
 	color:#2F2F2D; 
 	font-weight: 600;
 }
+
+.bubble-container {
+	background-color: rgba(255,255,255,0.4); /* Change to the desired dark color */
+	border-radius: 20px; /* Adjust the value to control the roundness of the corners */
+	padding: 20px; /* Add space between the content and the border */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow to make the UI element pop */
+  }
+  
