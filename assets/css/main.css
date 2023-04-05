@@ -3860,8 +3860,12 @@ CAROUSEL SHIT
 	font-weight: normal;
 	margin: 0 0 0em 0;
 	font-size: 16pt;
-	color:#f5926e;
+	color:black;
 
+}
+
+.proj_title, h3 {
+	color:#2F2F2D;
 }
 
 
@@ -3953,3 +3957,10 @@ CAROUSEL SHIT
 	background-color: #3F51B5;
   }
   */
+
+  /* ORANGE BOLD STYLE  */
+
+.bold {
+	color:#2F2F2D; 
+	font-weight: 600;
+}
