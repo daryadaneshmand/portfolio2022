@@ -3571,6 +3571,47 @@ dd {
 
 }
 
+.container-nomargin {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* margin-bottom: 4em; */
+
+}
+
+.container2-nomargin { /* column */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* margin-bottom: 4em; */
+
+}
+
+.container-tile {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	background-color: #ffffff; /* Change this to your preferred pastel color */
+	border-radius: 10px; /* Adjust the value to get the desired rounded edge effect */
+	/* border: .5px solid #999999; */
+	padding: 2em; /* Add padding inside the container for better content spacing */
+}
+
+.container-tile2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	background-color: #ffffff; /* Change this to your preferred pastel color */
+	border-radius: 10px; /* Adjust the value to get the desired rounded edge effect */
+	padding: 2em; /* Add padding inside the container for better content spacing */
+	/* border: .5px solid #999999; */
+}
+
+
 .small_container {
 	display: flex;
 	flex-direction: row;
